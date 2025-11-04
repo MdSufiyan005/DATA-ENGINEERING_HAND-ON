@@ -1,71 +1,61 @@
+# Introduction to Data Engineering
 
-# 📊 Introduction to Data Engineering
+## About
 
-This repo documents the **fundamental concepts, tools, and workflows** that power modern data infrastructure. I
-
----
-
-## 🧠 About the Repository
-
-This repository contains **5 practical assignments** from my **Data Engineering class**, focusing on real-world problem-solving and implementation.
+This repository contains 5 practical assignments from my Data Engineering class, focusing on real-world implementation.
 
 ---
 
-## ⚙️ Setup Instructions
+## Setup
 
-Before running any scripts, configure your **environment variables** in a `.env` file. This ensures your **API keys** and **database credentials** remain secure and are not hard-coded into scripts. Also, make sure to install all the required dependencies.
-
-### 1. Create a Virtual Environment
-
+### 1. Create Virtual Environment
 ```bash
 python -m venv myenv
-myenv/Scripts/activate   # For Windows
+myenv/Scripts/activate   # Windows
 ```
 
-### 2. Add Your Credentials
+### 2. Configure Environment Variables
 
-Create a `.env` file in the root directory and include your credentials:
-
+Create a `.env` file in the root directory:
 ```ini
-# 🌦️ OpenWeatherMap API Key
+# OpenWeatherMap API
 WEATHER_API_KEY=your_api_key_here
 
-# 🗄️ PostgreSQL Database
+# PostgreSQL
 HOST=your_postgres_host
 USER=your_postgres_user
 PASSWORD=your_postgres_password
 DATABASE=weather_retail_db
 
-# 🍃 MongoDB Database
+# MongoDB
 MONGO_URI=mongodb://your_user:your_password@host:port
 MONGO_DB=weather_retail_db
 ```
 
-⚠️ **Important:** Never commit your `.env` file to GitHub. Add it to `.gitignore`.
+**Note:** Add `.env` to `.gitignore` before committing.
 
 ### 3. Install Dependencies
-
 ```bash
 pip install -r requirements.txt
 ```
 
 ---
 
-## 🎯 Learning Goals
+## Learning Goals
 
-* Understand how data flows through modern systems
-* Build ETL pipelines for structured & unstructured data
-* Explore relational vs. non-relational databases
-* Work with batch and stream processing
-* Apply best practices in data modeling and pipeline design
+- Understand data flow through modern systems
+- Build ETL pipelines for structured and unstructured data
+- Explore relational vs. non-relational databases
+- Work with batch and stream processing
+- Apply data modeling and pipeline design best practices
 
 ---
 
-## 📚 Topics Covered
+## Topics Covered
 
-* Relational vs. Non-relational Databases
-* SQL for Data Manipulation
-* Batch vs. Stream Processing
-* Hands-on Projects with Python and Pandas
-* API-based Data Ingestion into PostgreSQL & MongoDB
+- Relational vs. Non-relational Databases
+- SQL for Data Manipulation
+- Batch vs. Stream Processing
+- Python and Pandas Projects
+- API-based Data Ingestion (PostgreSQL & MongoDB)
 
